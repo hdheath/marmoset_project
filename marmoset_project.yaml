@@ -1,0 +1,18 @@
+name: marmoset_project
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  # assumes sedef is available (cannot download in conda)
+  - repeatmasker=4.1.7  # RepeatMasker v4.1.7
+  - ncbi-genome-download  # Required for accessing NCBI tools
+  - blast  # Includes windowmasker as part of BLAST+
+  - trf  # Tandem Repeat Finder
+  - bedtools  # Required for BED file operations
+  - samtools  # Required for FASTA indexing
+  - python  # Ensures Python is available
+  - pip  # Allows adding extra Python-based dependencies if needed
+  - perl  # Required for RepeatMasker
+  - pandas  # For data analysis
+  - matplotlib  # For plotting and visualization
